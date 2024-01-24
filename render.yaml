@@ -10,22 +10,18 @@ services:
     name: database
     runtime: docker
     rootDir: database
-    healthCheckPath: /
 
   - type: pserv
     name: event-bus
     runtime: docker
     rootDir: event-bus
-    healthCheckPath: /
 
   - type: pserv
     name: posts
     runtime: docker
     rootDir: posts
-    healthCheckPath: /
 
   - type: pserv
     name: request-counter
     runtime: docker
     rootDir: request-counter
-    healthCheckPath: /
